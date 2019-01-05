@@ -77,9 +77,16 @@ C | 1 | 0 | 0 | 0
 
 
 ```
-dp[i, j] = 1                                               if i == j
-
-           = s[i] == s[j]                                if j = i + 1
-
-           = s[i] == s[j] && dp[i + 1][j - 1]    if j > i + 1      
+ if i == j :
+     dp[i, j] = 1 
+ else if s[i] = s[j]:
+     if  i = j+1:
+         dp[i,j] = 1
+     else if dp[i-1][j+1] == 1:
+         dp[i,j] = 1
+     else:
+         dp[i,j] = 0
+ else:
+     dp[i,j] = 0 
+     
 ```
