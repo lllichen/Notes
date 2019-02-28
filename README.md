@@ -11,3 +11,5 @@
 ###
 [thread](https://github.com/lllichen/Notes/blob/master/thread "thread")
 
+###
+[aqs](https://zhuanlan.zhihu.com/p/54297968 "AQS")
